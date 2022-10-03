@@ -1,0 +1,222 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#landing-page {
+    background-attachment: fixed;
+    position: relative;
+    background-image: url(https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80);
+    background-size: cover;
+    height: 100vh;
+}
+.welcome-text {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    top: 45%;
+    text-align: center;
+    color: whitesmoke;
+    transform: scale(.8);
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: black;
+}
+.desktop {
+    display: none;
+}
+.nav-links li {
+    display: inline-block;
+    margin: auto;
+    color: whitesmoke;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+ul.nav-links {
+    margin: 0;
+    padding: 0;
+}
+.nav-links li a {
+    padding: 1em 2em;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+
+.nav-links li a:hover {
+    background-color: teal;
+}
+
+/* About */
+
+.img-icon {
+    max-width: 12em;
+}
+
+#about-me {
+    padding: 2em;
+}
+
+.introduction, .education, .working {
+    text-align: center;
+}
+
+.education, .working {
+    display: inline-block;
+    margin-top: 5em;
+}
+.content-perkenalan {
+    font-size: 1.2em;
+    width: 80%;
+    max-width: 24em;
+    margin: 1em auto;
+    text-align: justify;
+}
+
+#portfolio {
+    width: 100%;
+    padding: 2em 0;
+}
+
+.title-porfolio, .title-contact {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.container {
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.img-portfolio {
+    max-width: 300px;
+    display: inline-block;
+    width: 90%;
+    vertical-align: middle;
+    margin: 0 auto;
+    margin: 2em;
+}
+
+.form-contact-us, .contact-info {
+    width: 100%;
+    text-align: center;
+}
+
+.inputan {
+    width: 85%;
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+}
+
+.inputan > label {
+    display: block;
+    font-size: 1.2em;
+}
+
+.inputan > input, .inputan > textarea {
+    width: 100%;
+    margin: .5em 0;
+    font-size: 1em;
+}
+
+.btn-kirim {
+    width: 85%;
+    margin: 1em 0;
+    border: 0;
+    background-color: teal;
+    color: whitesmoke;
+    font-size: 1em;
+    padding: .5em 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2em;
+    padding: 1.5em 0;
+    color: whitesmoke;
+    background-color: black;
+}
+
+.contact-icon {
+    width: 60px;
+    margin: 2em;
+}
+.contact-desktop {
+    display: none;
+}
+
+.contact-icon-bundler {
+    display: block;
+}
+
+.contact-info > div {
+    display: inline-block;
+}
+
+@media only screen and (min-width: 600px){
+    .non-desktop {
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+    .navbar {
+        position: sticky;
+        display: flex;
+        justify-content:space-between;
+        text-align: center;
+    }
+    .nav-icon {
+        padding: 0;
+        width: 45px;
+        margin: .3em 2em;
+        float: left;
+    }
+    .navbar > .nav-links{
+        margin-right: 32px;
+    }
+    .education, .working {
+        width: 49%;
+        vertical-align: top;
+    }
+    hr {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .form-contact-us, .contact-info {
+        width: 49%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #contact-us {
+        vertical-align: top;
+    }
+    .contact-desktop {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .contact-icon-bundler {
+        display: inline-block;
+        min-width: 300px;
+        text-decoration: none;
+        color: black;
+    }
+    .contact-icon {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .contact-info > div {
+        display: block;
+    }
+}
